@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  vpnd:
+    image: ghcr.io/bubuntux/nordvpn
+    cap_add:
+      - NET_ADMIN
+    env_file:
+      - vpn.env
+    ports:
+      - 6901:6901
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+  notabot:
+    container_name: notabot
+    user: "chromer:people"
+    environment:
+      - CHROME_PROFILE=profile-2
+    cap_add:
+      - SETFCAP
+      - SETPCAP
+      - CHOWN
+      - DAC_OVERRIDE
+      - SYS_ADMIN
+    build: ./app
+    working_dir: /usr/app
+    volumes:
+      - ./output/app:/usr/output
+      - ./app:/usr/app
+    scale: 1
+    network_mode: service:vpnd
+    depends_on:
+      - vpnd

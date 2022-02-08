@@ -1,0 +1,2 @@
+# connect to VNC server
+http://localhost:6901/?password=vncpassword
