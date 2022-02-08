@@ -8,7 +8,7 @@ Puppeteer VPN Scrapers is eMedia Patch in house tool developed primarely to auto
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/edransy/puppeteer-vpn-scrapers.git
+   git clone https://github.com/edransy/puppeteer-vpn-scraper.git
    ```
 2. Create vpn.env file like vpn.env.example
 
