@@ -1,6 +1,6 @@
 # puppeteer-vpn-scraper<div id="top"></div>
 
-Puppeteer VPN Scraper is eMedia Patch in-house software developed primarely to automate Ads triggering and Screenshoting. It utilizes VCN and NordVPN DockerImages to run locally for various markets depending on environment variables, and Puppeteer as primary tool to control Chrome headlessly as well as various custom helper functions for more efficient scraping. It's current setup runs Google screenshot tool, however it is easily modifiable to run on any other site and location.    
+Puppeteer VPN Scraper is eMedia Patch in-house software developed primarely to automate Ads triggering and Screenshoting. It utilizes VNC and NordVPN Docker Images to run locally for various location settings depending on environment, and Puppeteer as primary tool to control Chromium headlessly as well as various custom helper functions for more efficient scraping. It's current setup runs Google screenshot tool, however it is easily modifiable to run on any other site and location.    
 
 ![alt text](https://i.postimg.cc/653NQFHc/bose-wireless-headphones.png)
 
