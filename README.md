@@ -20,7 +20,7 @@ Puppeteer VPN Scrapers is eMedia Patch in house tool developed primarely to auto
    ```sh
    docker exec -it notabot /bin/bash
    ```
-5. To access VCN GUI 
+5. To access VCN GUI (optional)
    ```sh
    http://localhost:6901/?password=vncpassword
    ```   
